@@ -1,0 +1,137 @@
+{% extends 'app/index.html'%}
+{% load static %}
+{% block body %}
+<div style="background-color:Maroon;">.</div>
+<br/><br/>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  text-align:center;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="background-color:white;">
+<div style="text-align:center"><br/>
+  <h1>INSURANCE PARTNERS WHICH WE ACCEPT
+</h1>
+<br/><br/><br/>
+
+  <table style="width:100%;">
+    <tr><td><center>TOP STOP</center></td><td><center>AUTO DRIVE</center></td><td><center>AUTO POINT</center></td><td><center>CAR SURE</center></td></tr>
+    <tr><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/167.png'%}" alt="Nature" style="width:300px;" onclick="myFunction(this);">
+  </div></td><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/12.jpg'%}" alt="Nature" style="width:300px;" onclick="myFunction(this);">
+  </div></td><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/321.jpg'%}" alt="Nature" style="width:250px;" onclick="myFunction(this);">
+  </div>
+    </td><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/156.png'%}" alt="Nature" style="width:300px;" onclick="myFunction(this);">
+  </div>
+    </td></tr>
+
+    <tr><td><center>ROAD TRIP</center></td><td><center>AUTO PLUS</center></td><td><center>POINT CAR</center></td><td><center>SPEED CAR</center></td></tr>
+    <tr><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/23.jpg'%}" alt="Nature" style="width:300px;" onclick="myFunction(this);">
+  </div></td><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/35.jpg'%}" alt="Nature" style="width:300px;" onclick="myFunction(this);">
+  </div></td><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/78.jpg'%}" alt="Nature" style="width:250px;" onclick="myFunction(this);">
+  </div>
+    </td><td>
+      <div class="row">
+  <div class="column">
+    <img src="{% static 'app/image/images.png'%}" alt="Nature" style="width:300px; " onclick="myFunction(this);">
+  </div>
+    </td></tr>
+
+  </table>
+  </div>
+  <br/><br/><br/>
+
+
+
+</body>
+</html>
+
+
+{% endblock %}
+
+
+

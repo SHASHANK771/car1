@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is bootstrap offline method</title>
+  <link rel="stylesheet" href="{% static 'bob.css' %}">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+
+<style>
+table th, td{
+border:0px solid black;
+border-collapse:collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #236A72;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 8px 15px;
+  margin-top: 8px;
+  margin-right: 55px;
+  background: #236a72;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #236a72;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: white;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid red;
+  }
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  height:50px;
+  width:350px;
+}
+.success {background-color: Maroon;} /* Green */
+.success:hover {background-color: #46a049;}
+
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  height:30px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:30px;
+}
+h1{
+  text-shadow: 3px 0px red;
+}
+
+btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 2px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*/
+
+
+
+</style>
+</head>
+<body>
+
+<div style="background-color:#236A72; width:100%; height:180px;">
+    <center><table><tr><td><img src="{% static 'app/image/(141).png'%}"  style="width:200px; height:150px;">
+    </td><td><h1 style="color:pink; font-size:30px;">DR.REPAIR<br/>Auto Center</h1></td>
+        <td style="width:1100px;">
+            <div class="topnav">
+                <a  href="http://127.0.0.1:8000/">HOME</a>
+                <a href="about">ABOUT US</a>
+                <a href="services">SERVICES</a>
+                <a href="ins">INSURANCE</a>
+                <a href="login">CONTACT</a>
+                <a href="from2">LOGIN</a>
+                
+             <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Type her Search.."  name="search">
+        <button> <a style="height:-5px; margin-top:-13px;" href="https://www.google.com/search?q=google&oq=gool&aqs=chrome.1.69i57j0l7.3910j0j7&sourceid=chrome&ie=UTF-8">Search</a> </button>
+    </form>
+             </div>
+</div>
+        </td></tr></table></center>
+        
+
+<p id="demo" style="text-align: center; margin-top:-20px; color:white; font-size:20px;"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</div>
+
+<div style="background-color:Maroon;">
+    {% block body %}
+    <div class="container">
+    <img src="{% static 'app/image/862.jpg'%}" alt="Snow" style="width:100%; height:800px;">
+        <div class="centered"><h1 style="font-size:60px;">CAR & AUTO REPAIR SERVICES</h1></div>
+</div>
+
+  <center><table style="width:1000px;">
+      <tr>
+        <td><center><p style="color:white; font-size:20px;">MECHANIC</p>
+            <p style="color:white;"> I'm a paragraph. Click here to add your own text and edit me.</p></center>
+        </td><td><center><p style="color:white; font-size:20px;">CAR ACCESSORIES</p></center>
+        <p style="color:white;">I'm a paragraph. Click here to add your own text and edit me.</p></td>
+          <td><center><p style="color:white;font-size:20px;">BREAKDOWN SERVICES</p></center>
+        <p style="color:white;">I'm a paragraph. Click here to add your own text and edit me.</p></td>
+    </tr>
+  </table></center>
+    <br/></div><br/><br/><br/><br/>
+
+    <center><table>
+        <tr>
+            <td style="font-size:30px;"><center><h1>COME AND VISIT US</h1></center></td><td><center>
+            <button class="btn success">Success</button></center></td>
+        </tr>
+
+        <tr>
+            <td>I'm a paragraph. Click here to add your own text and edit me.<br/>
+                I’m a great place for you to tell a story and let your users know  <br/>
+                <center>a little more about you.</center><br/>
+
+
+</td><td><img src="{% static 'app/image/34.jpg'%}"  style="width:350px; height:200px;"></td>
+        </tr>
+    </table>
+    </center>
+
+<br/><br/>
+<div style="background-color:Goldenrod; height:800px;"><br/><center><h1>OFFERING YOU THE BEST SOLUTION FOR <br/>
+    YOU CAR.</h1></center>
+<br/><br/><center>I'm a paragraph. Click here to add your own text and edit me.<br/>
+        I’m a great place for you to tell a story and let your users know a little more about you.</center><br/>
+    <br/><br/><br/>
+<center><table style="width:1000px;">
+    <tr>
+        <td><center><img src="{% static 'app/image/787.png'%}"  style="width:150px; height:100px;"></center></td>
+        <td><center><img src="{% static 'app/image/158.png'%}"  style="width:150px; height:100px;"></center></td>
+        <td><center><img src="{% static 'app/image/166.png'%}"  style="width:150px; height:100px;"></center></td>
+    </tr>
+    <tr>
+        <td><center><p style="color:black; font-size:20px;">ALWAYS OPEN<br>
+            FOR YOU<br/><p style="font-size:15px;">I'm a paragraph. Click here to add your own text and edit me.<br/>
+                I’m a great place for you to tell a story and let your users <br/>
+                know a little more about you</p></p></center></td>
+        <td><center><p style="color:black; font-size:20px;">UNBEATABLE<br/>
+            PRICES<br/><p style="font-size:15px;">I'm a paragraph. Click here to add your own text and edit me.<br/>
+                I’m a great place for you to tell a story and let your users <br/>
+                know a little more about you</p></p></center></td>
+        <td><center><p style="color:black; font-size:20px;">PROFESSIONALLY<br/>QUALIFIED<br/>
+            <p style="font-size:15px;">I'm a paragraph. Click here to add your own text and edit me.<br/>
+                I’m a great place for you to tell a story and let your users <br/>
+                know a little more about you</p></p></center></td>
+
+    </tr>
+
+</table></center>
+</div><br/><br/>
+
+            <center><h1>SELLING ONLY QUALITY BRANDS:</h1></center><br/><br/>
+
+            <center><table style="width:1000px;">
+    <tr>
+         <td><center><p style="color:black; font-size:20px;">ROAD TRIP</p></center></td>
+          <td><center><p style="color:black; font-size:20px;">ALTO PLUS</p></center></td>
+          <td><center><p style="color:black; font-size:20px;">POINT CAR</p></center></td>
+          <td><center><p style="color:black; font-size:20px;">SPEED CAR</p></center></td>
+    </tr>
+
+      <tr>
+        <td><center><p style="color:white; font-size:30px;"></p>
+             <img src="{% static 'app/image/23.jpg'%}"  style="width:150px; height:100px;"> </center></td>
+          <td><center><p style="color:white; font-size:30px;"></p>
+              <img src="{% static 'app/image/35.jpg'%}"  style="width:150px; height:100px;"></center></td>
+          <td><center><p style="color:white;font-size:30px;"></p>
+              <img src="{% static 'app/image/78.jpg'%}"  style="width:150px; height:100px;"></center></td>
+          <td><center><p style="color:white; font-size:30px;"></p>
+              <img src="{% static 'app/image/images.png'%}"  style="width:150px; height:100px;"> </center></td>
+    </tr>
+          </table></center><br/><br/><br/><br/><br/>
+          <table style=" width:100%">
+            <tr><td>
+<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1845372.4457524728!2d78.63490057996688!3d25.39667337438052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m3!3m2!1d26.5681594!2d78.1906778!4m0!5e0!3m2!1sen!2sin!4v1600234498211!5m2!1sen!2sin" width="800" height="350" frameborder="0" 
+style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></td>
+<td>
+  <br>
+  <h2 style="text-align: center;margin-right:60px;">Corporate Office</h2>
+  <div class="btn-group" style="width: 650px;">
+    <button class="button" style="background-color:brown;   width: 300px; height:50px;">Corporate Office</button>
+    <a href="from1"><button class="button" style="width: 300px; height:50px;">Book an Appointment</button></a>
+    
+  </div>
+
+
+
+</td>
+</tr>
+</table>
+          
+{% endblock %}
+<div style="background-color:Maroon;">
+    <center><table style="width:1000px;">
+      <tr>
+        <td><center><p style="color:white; font-size:20px;">CALL US</p>
+            <p style="color:white;">Tel: 1234 1245 1256 <br/>Phone Number:7388729494</p></center></td><td><center><p style="color:white; font-size:20px;">EMAIL US</p></center>
+          <center><p style="color:white;">shashank510sen@yahoo.com</p></center></td><td><center><p style="color:white;font-size:20px;">OPENING HOURS</p></center>
+          <center><p style="color:white;">9:00AM to 9:30PM  Monday to Saturday off Sunday
+
+          </p></center></td>
+    </tr>
+  </table></center>
+
+</div>
+<div style="background-color:#236A72; height:300px;">
+    <center><table style="width:1000px;">
+      <tr>
+          <td><center><p style="color:white; font-size:20px;">OVER 30 YEARS</br>EXPERIENCE</p>
+              </td>
+          <td><center><p style="color:white; font-size:20px;">OUR SERVICES</p></center></td>
+          <td><center><p style="color:white; font-size:20px;">VISIT US</p></center></td></tr>
+         <td>
+             <center> <p style="color:white;">I am Paragraph.Click here to<br/> add your own text and edit me</p></center>
+             <center><a href="https://www.google.com/" class="fa fa-facebook"></a>
+<a href="https://www.google.com/" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a><br/>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.google.com/" class="fa fa-instagram"></a>
+             <a href="https://www.google.com/" class="fa fa-pinterest"></a></center></td>
+          <td><center><p style="color:white;">Mechanics<br/>Car Checks<br/>Oil and Break Checks<br/>
+          Breakdown Services<br/>Tire Change<br/>Battery Change</p></center></td>
+        <td><center><p style="color:white;">500 Terry Francois Street<br/>San Francisco, Ca 94158</p></center></td>
+    </tr>
+  </table></center>
+
+</div>
+<div style="background-color:black; color:white;"><center>@2023 by DR.Repair, Proudly Created width wix.com </center></div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+ 
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+ 
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+  
+  <script type="text/javascript"></script>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+</style>
+    </head>
+    <body>
+
+<form method="Post">
+
+              {% csrf_token %}
+                {{ f.as_p}}
+
+       <input type="submit" class="btn btn-primary" value="Submit"/>
+
+
+</form>
+
+
+
+
+
+    </body>
+
+</html>

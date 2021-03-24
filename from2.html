@@ -1,0 +1,62 @@
+{% extends 'app/index.html'%}
+
+{% load static %}
+
+{% block body %}
+
+<div style="background-color: white"><br><br>
+  <div style="background-color: Maroon;height:70px; margin-top:-45px;"></div>
+  <h2 style="text-align: center; color:brown;">Registering From</h2>
+  <p style="text-align: center;">For queries enter details below</p>
+  <center><div style="text-align:center;border: 0px solid black; box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2); width:600px; background-color: whitesmoke;">
+
+
+    <form method="POST">
+      {% csrf_token %}
+    <br>
+      <label for="name" style="margin-right:550px;"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter The Name" name="name" id="name" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="number" style="margin-right:550px;"><b>Phone</b></label><br>
+      <input type="number" placeholder="Enter The Number" name="number" id="number" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="email" style="margin-right:550px;"><b>Email</b></label><br>
+      <input type="email" placeholder="Enter The Email" name="email" id="email" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="address" style="margin-right:550px;"><b>Address</b></label><br>
+      <input type="text" placeholder="Enter The Address" name="address" id="address" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="about" style="margin-right:560px;"><b>State</b></label><br>
+      <input type="text" placeholder="Enter about" name="about" id="about" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="city" style="margin-right:570px;"><b>City</b></label><br>
+      <input type="text" placeholder="Enter city" name="city" id="city" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="Where did you hear about us" style="margin-right:380px;"><b>Where did you hear about us</b></label><br>
+      <input type="text" placeholder="Enter Where did you hear about us " name="Where did you hear about us" id="Where did you hear about us" required style="background-color: white; width:590px;height:45px;">
+      <br><br>
+      <label for="comment" style="margin-right:550px;"><b>Comment</b></label><br>
+      <input type="text" placeholder="enter comment" name="comment" id="comment" required style="background-color: white; width:590px;height:75px;">
+      <br><br>
+        
+        
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <br><br>
+    <button type="submit" class="registerbtn" style="background-color: green; width:100px;"><p style="color: white;">Register</p></button><br><br>
+</div>
+    
+  
+      <br>
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+      <br><br>
+    </form>
+</div></center><br><br><br>
+
+
+
+</div>
+        
+     
+     
+
+{% endblock %}
